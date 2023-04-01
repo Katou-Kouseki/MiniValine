@@ -1,7 +1,7 @@
 const check = {
   mail (m) {
     return {
-      k: /^[A-Za-z0-9\u4e00-\u9fa5]+(\.[A-Za-z0-9\u4e00-\u9fa5]+){0,2}@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(e),
+      k: /^[A-Za-z0-9_-\u4e00-\u9fa5]+(\.[A-Za-z0-9_-\u4e00-\u9fa5]+){0,2}@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(e),
       v: m
     }
   },
