@@ -22,7 +22,7 @@ const script = (root, init = false) => {
       vendor.push('npm/marked@1.2.0/lib/marked.min.js')
     }
 
-    getScriptfun('https://cdn.jsdelivr.net/combine/' + vendor.join(','), function() {
+    getScriptfun('https://fastly.jsdelivr.net/combine/' + vendor.join(','), function() {
       root.initBody()
       window.MV.scriptEle = true
     }, window.MV.scriptEle == true || vendor.length == 0 )
